@@ -1,0 +1,21 @@
+//  Template
+java  \
+"-Dchat.id=-1053872341..." \
+"-Dbot.token=1265622901:AAHTwGNmvuqc..." \
+"-Dproject.name=${JOB_BASE_NAME}" \             <- jenkins environment var
+"-Dbuild.launch.name=Some release 2.0" \
+"-Dbuild.env=https://prod.your.site" \
+"-Dbuild.report.link=${BUILD_URL}" \            <- jenkins environment var
+"-Dlang=en" \
+"-Denable.chart=true" \
+"-Dallure.report.folder=./allure-report/" \
+-jar allure-notifications-2.2.1.jar
+
+// Jenkins
+java \
+"-DprojectName=Jenkins test run" \
+"-Denv=PROD" \
+"-DreportLink=qa.guru" \
+"-Dcomm=Any comment here" \
+"-Dconfig.file=notifications/telegram_config.json" \
+-jar notifications/allure-notifications-4.1.jar
