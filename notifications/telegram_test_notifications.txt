@@ -18,4 +18,4 @@ java \
 "-DreportLink=qa.guru" \
 "-Dcomm=Any comment here" \
 "-Dconfig.file=notifications/telegram_config.json" \
--jar notifications/allure-notifications-4.1.jar
+-jar notifications/allure-notifications-3.1.2.jar
