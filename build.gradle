@@ -47,3 +47,13 @@ tasks.withType(Test) {
         }
     }
 }
+
+/*
+    chat_id     -668349830
+    bot_token   5388712749:AAHjGSqvaPqJTa1Y6U4hOnyzkncm8VaX3YY
+curl -X POST \
+     -H 'Content-Type: application/json' \
+     -d '{"chat_id": "-668349830", "text": "@ruzhyaboroda hello!", "disable_notification": true}' \
+     https://api.telegram.org/bot5388712749:AAHjGSqvaPqJTa1Y6U4hOnyzkncm8VaX3YY/sendMessage
+
+ */
